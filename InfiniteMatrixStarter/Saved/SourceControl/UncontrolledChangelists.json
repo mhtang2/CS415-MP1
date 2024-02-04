@@ -1,0 +1,25 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/Users/mtang/Desktop/CS415-MP1/InfiniteMatrixStarter/Content/InfiniteMatrix/Blueprints/BP_Player.uasset",
+				"C:/Users/mtang/Desktop/CS415-MP1/InfiniteMatrixStarter/Content/InfiniteMatrix/Blueprints/BP_TunnelSpawner.uasset",
+				"C:/Users/mtang/Desktop/CS415-MP1/InfiniteMatrixStarter/Content/InfiniteMatrix/Maps/TutorialMap.umap",
+				"C:/Users/mtang/Desktop/CS415-MP1/InfiniteMatrixStarter/Content/InfiniteMatrix/Blueprints/BP_Tunnel.uasset",
+				"C:/Users/mtang/Desktop/CS415-MP1/InfiniteMatrixStarter/Content/InfiniteMatrix/UI/WBP_Restart.uasset",
+				"C:/Users/mtang/Desktop/CS415-MP1/InfiniteMatrixStarter/Content/InfiniteMatrix/UI/HealthBar.uasset",
+				"C:/Users/mtang/Desktop/CS415-MP1/InfiniteMatrixStarter/Content/InfiniteMatrix/UI/WBP_Health.uasset",
+				"C:/Users/mtang/Desktop/CS415-MP1/InfiniteMatrixStarter/Content/InfiniteMatrix/Blueprints/HealthPack.uasset",
+				"C:/Users/mtang/Desktop/CS415-MP1/InfiniteMatrixStarter/Content/InfiniteMatrix/Blueprints/Bullet.uasset",
+				"C:/Users/mtang/Desktop/CS415-MP1/InfiniteMatrixStarter/Content/InfiniteMatrix/Blueprints/BP_Enemy.uasset",
+				"C:/Users/mtang/Desktop/CS415-MP1/InfiniteMatrixStarter/Content/InfiniteMatrix/Materials/Shake.uasset",
+				"C:/Users/mtang/Desktop/CS415-MP1/InfiniteMatrixStarter/Content/InfiniteMatrix/UI/Hurt.uasset",
+				"C:/Users/mtang/Desktop/CS415-MP1/InfiniteMatrixStarter/Content/InfiniteMatrix/Blueprints/BP_T.uasset",
+				"C:/Users/mtang/Desktop/CS415-MP1/InfiniteMatrixStarter/Content/InfiniteMatrix/Blueprints/BP_TunnelSpaner.uasset"
+			]
+		}
+	]
+}
