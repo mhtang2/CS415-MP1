@@ -1,0 +1,20 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/Users/mtang/Desktop/CS415-MPs/MP2 5.2/Content/MyLevel.umap",
+				"C:/Users/mtang/Desktop/CS415-MPs/MP2 5.2/Content/LearningKit_Games/Blueprints/PlayerCharacter/BP_LearningKit_PlayerCharacter.uasset",
+				"C:/Users/mtang/Desktop/CS415-MPs/MP2 5.2/Content/Hour_of_Code/Widgets/W_HUD.uasset",
+				"C:/Users/mtang/Desktop/CS415-MPs/MP2 5.2/Content/BP_health.uasset",
+				"C:/Users/mtang/Desktop/CS415-MPs/MP2 5.2/Content/BP_Gameover.uasset",
+				"C:/Users/mtang/Desktop/CS415-MPs/MP2 5.2/Content/BP_scorer.uasset",
+				"C:/Users/mtang/Desktop/CS415-MPs/MP2 5.2/Content/Pursuer_AIController.uasset",
+				"C:/Users/mtang/Desktop/CS415-MPs/MP2 5.2/Content/BP_Pursuer.uasset",
+				"C:/Users/mtang/Desktop/CS415-MPs/MP2 5.2/Content/EAIState.uasset"
+			]
+		}
+	]
+}
