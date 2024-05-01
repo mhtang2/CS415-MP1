@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://cw8ryhq1lsb2d"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_p4t13"]
+[ext_resource type="Texture2D" uid="uid://yxuc81667tru" path="res://art/nerd.png" id="1_wfiqb"]
+[ext_resource type="Texture2D" uid="uid://dt2mjys1mgpnu" path="res://art/star.png" id="2_nt6rn"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p14p5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_nt6rn")
+}],
+"loop": true,
+"name": &"ghost",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_wfiqb")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tclxx"]
+
+[node name="Player" type="Area2D"]
+script = ExtResource("1_p4t13")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+sprite_frames = SubResource("SpriteFrames_p14p5")
+animation = &"ghost"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(3, 3)
+shape = SubResource("CircleShape2D_tclxx")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

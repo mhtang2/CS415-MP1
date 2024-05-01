@@ -1,0 +1,39 @@
+[gd_scene load_steps=7 format=3 uid="uid://b7ixjiw20h8ba"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_iec0o"]
+[ext_resource type="PackedScene" uid="uid://cw8ryhq1lsb2d" path="res://player.tscn" id="1_knflw"]
+[ext_resource type="PackedScene" uid="uid://g6chwo1ebvsn" path="res://enemy.tscn" id="2_of8fn"]
+[ext_resource type="PackedScene" uid="uid://d3hxi6ynbhwr0" path="res://health.tscn" id="3_o6xd2"]
+[ext_resource type="PackedScene" uid="uid://irred3fcix4h" path="res://hud.tscn" id="4_ihuox"]
+[ext_resource type="PackedScene" uid="uid://e56nuu4k8wpx" path="res://star.tscn" id="4_kxbtg"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_iec0o")
+enemy_scene = ExtResource("2_of8fn")
+health_scene = ExtResource("3_o6xd2")
+star_scene = ExtResource("4_kxbtg")
+
+[node name="Player" parent="." instance=ExtResource("1_knflw")]
+position = Vector2(-317, -23)
+
+[node name="EnemySpawn" type="Timer" parent="."]
+
+[node name="ScoreTimer" type="Timer" parent="."]
+
+[node name="GameStart" type="Timer" parent="."]
+one_shot = true
+
+[node name="SpawnPosition" type="Marker2D" parent="."]
+position = Vector2(240, 640)
+
+[node name="ObjectSpawnPosition" type="Marker2D" parent="."]
+position = Vector2(249, 25)
+
+[node name="HUD" parent="." instance=ExtResource("4_ihuox")]
+
+[connection signal="heal" from="Player" to="." method="_on_player_heal"]
+[connection signal="hit" from="Player" to="." method="_on_player_hit"]
+[connection signal="timeout" from="EnemySpawn" to="." method="_on_enemy_spawn_timeout"]
+[connection signal="timeout" from="ScoreTimer" to="." method="_on_score_timer_timeout"]
+[connection signal="timeout" from="GameStart" to="." method="_on_game_start_timeout"]
+[connection signal="start_game" from="HUD" to="." method="_on_hud_start_game"]
